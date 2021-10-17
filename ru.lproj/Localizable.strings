@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  HeartRateDisplay
+
+  Created by Mikhail Kryuchkov on 7/7/21.
+  
+*/
+
+"heartRate" = "Heart Rate";
+"openWatchApp" = "Open companion app";
+"openWatchAppInstruction" = "To start tracking your heart rate from iPhone, open Heart Rate Display companion app on a connected Apple Watch.";
+"watchAppNotInstalled" = "Watch app is not installed.";

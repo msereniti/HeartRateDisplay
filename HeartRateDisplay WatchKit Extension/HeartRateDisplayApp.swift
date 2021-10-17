@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import WatchKit
 
 @main
 struct HeartRateDisplayApp: App {
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {

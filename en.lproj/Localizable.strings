@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  HeartRateDisplay
+
+  Created by Mikhail Kryuchkov on 7/7/21.
+  
+*/
+
+"heartRate" = "Heart Rate";
+"openWatchApp" = "Open companion app";
+"openWatchAppInstruction" = "To start tracking your heart rate from iPhone, open the Cardio Display companion app on a connected Apple Watch.";
+"watchAppNotInstalled" = "Watch app is not installed.";
+"watchAppNotInstalledInstruction.intro" = "App requires both having a connected Apple Watch and a companion app installed on them. If the companion app is not installed, do the following:";
+"watchAppNotInstalledInstruction.openApp" = "On your iPhone, find and open the Watch app.";
+"watchAppNotInstalledInstruction.scrollDown" = "Scroll to bottom to the Available apps list.";
+"watchAppNotInstalledInstruction.tapInstall" = "Tap install on Cardio Display row.";
+"timeInterval.moment" = "a moment";
+"timeInterval.about6seconds" = "~ 6 seconds";
+"timeInterval.seconds %lld" = "~ %lld seconds";
+"timeInterval.minute" = "a minute";
+"timeInterval.minutes %lld" = "~ %lld minutes";
+"timeInterval.minutesExact %lld" = "%lld minutes";
+"timeInterval.hoursExact %lld" = "%lld hours";
+"timeInterval.hour" = "an hour";
+"timeInterval.daysExact %lld" = "%lld days";
+"timeInterval.day" = "a day";
+"timeInterval.monthsExact %lld" = "%lld months";
+"timeInterval.month" = "a month";
+"timeInterval.yearsExact %lld" = "%lld years";
+"timeInterval.year" = "a year";
+"timeInterval.got" = "got";
+"timeInterval.ago" = "ago";
+"timeInterval.sessionEndsIn" = "session ends in";
+"measuring" = "measuring...";
+"alert.hide" = "Hide";
+"alert.neverShowAgain" = "Never show again";
+"alert.permission.title" = "App permissions seem to be denied";
+"alert.permission.body %lld" = "The app hasn't received any heart rate updates for more than %lld seconds. Likely you haven't granted the access to heart rate. To do so, on your iPhone, go to Settings > Privacy > Health > Cardio Display and toggle the Heart Rate switcher.";
+"alert.error.unknown" = "Unknown error occured while trying to access heart rate";
+"alert.error.noDescription" = "no error description";

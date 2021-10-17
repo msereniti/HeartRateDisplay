@@ -1,6 +1,121 @@
 {
   "images" : [
     {
+      "filename" : "iPhone_Notifications_20_2x-1.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPhone_Notifications_20_3x-1.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPad_Settings_29_1x-1.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPhone_Settings_29_2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPhone_Settings_29_3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPad_Mini_Spotlight_40_2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPhone_Spotlight_40_3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPhone_App_60_2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "iPhone_App_60_3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "iPad_Notifications_20_1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPad_Notifications_20_2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "iPad_Settings_29_1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPhone_Settings_29_2x-1.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "iPad_Spotlight_40_1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPad_Mini_Spotlight_40_2x-1.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "iPad_App_76_1x.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "iPad_App_76_2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "iPad_Pro_App_83.5_2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "83.5x83.5"
+    },
+    {
+      "filename" : "App_store_1024_1x-1.png",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "48.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -8,6 +123,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "55.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -15,18 +131,21 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "Apple_Watch_Settings_29_2x-1.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "Apple_Watch_Settings_29_3x-1.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "Apple_Watch_40_2x-1.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -34,6 +153,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "88.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -41,6 +161,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "Apple_Watch_50_2x-1.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -48,6 +169,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "Apple_Watch_Short_Look_86_2x-1.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -55,6 +177,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "196.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -62,6 +185,7 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "Apple_Watch_Short_Look_108_2x-1.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -69,6 +193,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "App_store_1024_1x-2.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

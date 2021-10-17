@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF162383269508FF00875833 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF162387269508FF00875833 /* Localizable.strings */; };
+		AF162384269508FF00875833 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF162387269508FF00875833 /* Localizable.strings */; };
+		AF162385269508FF00875833 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF162387269508FF00875833 /* Localizable.strings */; };
 		AF1BA70F2687809000A4AC29 /* HeartRateDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA70E2687809000A4AC29 /* HeartRateDisplayApp.swift */; };
 		AF1BA7112687809000A4AC29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA7102687809000A4AC29 /* ContentView.swift */; };
 		AF1BA7132687809100A4AC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BA7122687809100A4AC29 /* Assets.xcassets */; };
@@ -14,11 +17,29 @@
 		AF1BA71B2687809100A4AC29 /* HeartRateDisplay WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AF1BA71A2687809100A4AC29 /* HeartRateDisplay WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF1BA7202687809200A4AC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BA71F2687809200A4AC29 /* Assets.xcassets */; };
 		AF1BA7272687809200A4AC29 /* HeartRateDisplay WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF1BA7262687809200A4AC29 /* HeartRateDisplay WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AF1BA72C2687809200A4AC29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA72B2687809200A4AC29 /* ContentView.swift */; };
 		AF1BA72E2687809200A4AC29 /* HeartRateDisplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA72D2687809200A4AC29 /* HeartRateDisplayApp.swift */; };
-		AF1BA7302687809200A4AC29 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA72F2687809200A4AC29 /* ComplicationController.swift */; };
 		AF1BA7322687809300A4AC29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BA7312687809300A4AC29 /* Assets.xcassets */; };
 		AF1BA7352687809300A4AC29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1BA7342687809300A4AC29 /* Preview Assets.xcassets */; };
+		AF1BA74A2687814100A4AC29 /* HeartDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA7462687814100A4AC29 /* HeartDisplayView.swift */; };
+		AF1BA74B2687814100A4AC29 /* HeartRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA7472687814100A4AC29 /* HeartRateController.swift */; };
+		AF1BA74C2687814100A4AC29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1BA7482687814100A4AC29 /* ContentView.swift */; };
+		AF1BA7502687817700A4AC29 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1BA74F2687817700A4AC29 /* HealthKit.framework */; };
+		AF1BA7532687819F00A4AC29 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1BA7522687819F00A4AC29 /* HealthKit.framework */; };
+		AF1BA756268781E300A4AC29 /* Communicator in Frameworks */ = {isa = PBXBuildFile; productRef = AF1BA755268781E300A4AC29 /* Communicator */; };
+		AF1BA7582687820200A4AC29 /* Communicator in Frameworks */ = {isa = PBXBuildFile; productRef = AF1BA7572687820200A4AC29 /* Communicator */; };
+		AF50B13F2691E7FF00377EF3 /* getElapsedInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50B13E2691E7FF00377EF3 /* getElapsedInterval.swift */; };
+		AF50B1412691E84100377EF3 /* Pulsating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50B1402691E84100377EF3 /* Pulsating.swift */; };
+		AF50B1432691E86400377EF3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF50B1422691E86400377EF3 /* ActivityIndicator.swift */; };
+		AF753E7D268786AF004B11AB /* HeartDisplayWatchesConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF753E7A268786AF004B11AB /* HeartDisplayWatchesConnector.swift */; };
+		AF753E7E268786AF004B11AB /* getElapsedInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF753E7B268786AF004B11AB /* getElapsedInterval.swift */; };
+		AF753E7F268786AF004B11AB /* HeartDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF753E7C268786AF004B11AB /* HeartDisplayView.swift */; };
+		AF8F90332689B74E002FAF83 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F90322689B74E002FAF83 /* model.swift */; };
+		AF9C86882688B278009CFF47 /* RequireInstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C86872688B278009CFF47 /* RequireInstall.swift */; };
+		AF9C868A2688B287009CFF47 /* RequireOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C86892688B287009CFF47 /* RequireOpen.swift */; };
+		AFA12834271C807800D440FF /* ConfigurableStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA12833271C807800D440FF /* ConfigurableStack.swift */; };
+		AFA12836271C85CB00D440FF /* OrientationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA12835271C85CB00D440FF /* OrientationInfo.swift */; };
+		AFE31CA22690D132005A5CF2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE31CA12690D132005A5CF2 /* ActivityIndicator.swift */; };
+		AFE31CA42690E21E005A5CF2 /* Pulsating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE31CA32690E21E005A5CF2 /* Pulsating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF162386269508FF00875833 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AF1BA70B2687809000A4AC29 /* HeartRateDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1BA70E2687809000A4AC29 /* HeartRateDisplayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDisplayApp.swift; sourceTree = "<group>"; };
 		AF1BA7102687809000A4AC29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,12 +96,32 @@
 		AF1BA71F2687809200A4AC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF1BA7212687809200A4AC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF1BA7262687809200A4AC29 /* HeartRateDisplay WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartRateDisplay WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF1BA72B2687809200A4AC29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF1BA72D2687809200A4AC29 /* HeartRateDisplayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateDisplayApp.swift; sourceTree = "<group>"; };
-		AF1BA72F2687809200A4AC29 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		AF1BA7312687809300A4AC29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF1BA7342687809300A4AC29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF1BA7362687809300A4AC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1BA7462687814100A4AC29 /* HeartDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDisplayView.swift; sourceTree = "<group>"; };
+		AF1BA7472687814100A4AC29 /* HeartRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateController.swift; sourceTree = "<group>"; };
+		AF1BA7482687814100A4AC29 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF1BA74D2687817700A4AC29 /* HeartRateDisplay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartRateDisplay.entitlements; sourceTree = "<group>"; };
+		AF1BA74F2687817700A4AC29 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF1BA7512687819F00A4AC29 /* HeartRateDisplay WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartRateDisplay WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		AF1BA7522687819F00A4AC29 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF50B13C2691B47900377EF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF50B13E2691E7FF00377EF3 /* getElapsedInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getElapsedInterval.swift; sourceTree = "<group>"; };
+		AF50B1402691E84100377EF3 /* Pulsating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsating.swift; sourceTree = "<group>"; };
+		AF50B1422691E86400377EF3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		AF753E7A268786AF004B11AB /* HeartDisplayWatchesConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDisplayWatchesConnector.swift; sourceTree = "<group>"; };
+		AF753E7B268786AF004B11AB /* getElapsedInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getElapsedInterval.swift; sourceTree = "<group>"; };
+		AF753E7C268786AF004B11AB /* HeartDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDisplayView.swift; sourceTree = "<group>"; };
+		AF753E862687AA9D004B11AB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		AF8F90322689B74E002FAF83 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		AF9C86872688B278009CFF47 /* RequireInstall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireInstall.swift; sourceTree = "<group>"; };
+		AF9C86892688B287009CFF47 /* RequireOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireOpen.swift; sourceTree = "<group>"; };
+		AFA12833271C807800D440FF /* ConfigurableStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableStack.swift; sourceTree = "<group>"; };
+		AFA12835271C85CB00D440FF /* OrientationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationInfo.swift; sourceTree = "<group>"; };
+		AFE31CA12690D132005A5CF2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		AFE31CA32690E21E005A5CF2 /* Pulsating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1BA7502687817700A4AC29 /* HealthKit.framework in Frameworks */,
+				AF1BA7582687820200A4AC29 /* Communicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1BA7532687819F00A4AC29 /* HealthKit.framework in Frameworks */,
+				AF1BA756268781E300A4AC29 /* Communicator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,10 +149,12 @@
 		AF1BA7022687809000A4AC29 = {
 			isa = PBXGroup;
 			children = (
+				AF162387269508FF00875833 /* Localizable.strings */,
 				AF1BA70D2687809000A4AC29 /* HeartRateDisplay */,
 				AF1BA71E2687809100A4AC29 /* HeartRateDisplay WatchKit App */,
 				AF1BA72A2687809200A4AC29 /* HeartRateDisplay WatchKit Extension */,
 				AF1BA70C2687809000A4AC29 /* Products */,
+				AF1BA74E2687817700A4AC29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,11 +171,16 @@
 		AF1BA70D2687809000A4AC29 /* HeartRateDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				AFA12832271C806700D440FF /* Utils */,
+				AF753E79268786AF004B11AB /* HeartDisplay */,
+				AF1BA74D2687817700A4AC29 /* HeartRateDisplay.entitlements */,
 				AF1BA70E2687809000A4AC29 /* HeartRateDisplayApp.swift */,
 				AF1BA7102687809000A4AC29 /* ContentView.swift */,
 				AF1BA7122687809100A4AC29 /* Assets.xcassets */,
 				AF1BA7172687809100A4AC29 /* Info.plist */,
 				AF1BA7142687809100A4AC29 /* Preview Content */,
+				AF9C86872688B278009CFF47 /* RequireInstall.swift */,
+				AF9C86892688B287009CFF47 /* RequireOpen.swift */,
 			);
 			path = HeartRateDisplay;
 			sourceTree = "<group>";
@@ -152,9 +205,11 @@
 		AF1BA72A2687809200A4AC29 /* HeartRateDisplay WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				AF1BA72B2687809200A4AC29 /* ContentView.swift */,
+				AF1BA7512687819F00A4AC29 /* HeartRateDisplay WatchKit Extension.entitlements */,
+				AF1BA7442687814100A4AC29 /* HeartDisplay */,
 				AF1BA72D2687809200A4AC29 /* HeartRateDisplayApp.swift */,
-				AF1BA72F2687809200A4AC29 /* ComplicationController.swift */,
+				AF8F90322689B74E002FAF83 /* model.swift */,
+				AF1BA7482687814100A4AC29 /* ContentView.swift */,
 				AF1BA7312687809300A4AC29 /* Assets.xcassets */,
 				AF1BA7362687809300A4AC29 /* Info.plist */,
 				AF1BA7332687809300A4AC29 /* Preview Content */,
@@ -168,6 +223,50 @@
 				AF1BA7342687809300A4AC29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF1BA7442687814100A4AC29 /* HeartDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				AF1BA7462687814100A4AC29 /* HeartDisplayView.swift */,
+				AF50B13E2691E7FF00377EF3 /* getElapsedInterval.swift */,
+				AF1BA7472687814100A4AC29 /* HeartRateController.swift */,
+				AFE31CA32690E21E005A5CF2 /* Pulsating.swift */,
+				AFE31CA12690D132005A5CF2 /* ActivityIndicator.swift */,
+			);
+			path = HeartDisplay;
+			sourceTree = "<group>";
+		};
+		AF1BA74E2687817700A4AC29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF50B13C2691B47900377EF3 /* UIKit.framework */,
+				AF753E862687AA9D004B11AB /* SwiftUI.framework */,
+				AF1BA7522687819F00A4AC29 /* HealthKit.framework */,
+				AF1BA74F2687817700A4AC29 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF753E79268786AF004B11AB /* HeartDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				AF753E7A268786AF004B11AB /* HeartDisplayWatchesConnector.swift */,
+				AF753E7B268786AF004B11AB /* getElapsedInterval.swift */,
+				AF50B1422691E86400377EF3 /* ActivityIndicator.swift */,
+				AF50B1402691E84100377EF3 /* Pulsating.swift */,
+				AF753E7C268786AF004B11AB /* HeartDisplayView.swift */,
+			);
+			path = HeartDisplay;
+			sourceTree = "<group>";
+		};
+		AFA12832271C806700D440FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFA12833271C807800D440FF /* ConfigurableStack.swift */,
+				AFA12835271C85CB00D440FF /* OrientationInfo.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +287,9 @@
 				AF1BA71D2687809100A4AC29 /* PBXTargetDependency */,
 			);
 			name = HeartRateDisplay;
+			packageProductDependencies = (
+				AF1BA7572687820200A4AC29 /* Communicator */,
+			);
 			productName = HeartRateDisplay;
 			productReference = AF1BA70B2687809000A4AC29 /* HeartRateDisplay.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +324,9 @@
 			dependencies = (
 			);
 			name = "HeartRateDisplay WatchKit Extension";
+			packageProductDependencies = (
+				AF1BA755268781E300A4AC29 /* Communicator */,
+			);
 			productName = "HeartRateDisplay WatchKit Extension";
 			productReference = AF1BA7262687809200A4AC29 /* HeartRateDisplay WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -255,6 +360,9 @@
 				Base,
 			);
 			mainGroup = AF1BA7022687809000A4AC29;
+			packageReferences = (
+				AF1BA754268781E300A4AC29 /* XCRemoteSwiftPackageReference "Communicator" */,
+			);
 			productRefGroup = AF1BA70C2687809000A4AC29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1BA7162687809100A4AC29 /* Preview Assets.xcassets in Resources */,
+				AF162383269508FF00875833 /* Localizable.strings in Resources */,
 				AF1BA7132687809100A4AC29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1BA7202687809200A4AC29 /* Assets.xcassets in Resources */,
+				AF162384269508FF00875833 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1BA7352687809300A4AC29 /* Preview Assets.xcassets in Resources */,
+				AF162385269508FF00875833 /* Localizable.strings in Resources */,
 				AF1BA7322687809300A4AC29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,8 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA12836271C85CB00D440FF /* OrientationInfo.swift in Sources */,
+				AFA12834271C807800D440FF /* ConfigurableStack.swift in Sources */,
 				AF1BA7112687809000A4AC29 /* ContentView.swift in Sources */,
+				AF50B1412691E84100377EF3 /* Pulsating.swift in Sources */,
+				AF9C86882688B278009CFF47 /* RequireInstall.swift in Sources */,
+				AF753E7F268786AF004B11AB /* HeartDisplayView.swift in Sources */,
+				AF753E7D268786AF004B11AB /* HeartDisplayWatchesConnector.swift in Sources */,
+				AF753E7E268786AF004B11AB /* getElapsedInterval.swift in Sources */,
 				AF1BA70F2687809000A4AC29 /* HeartRateDisplayApp.swift in Sources */,
+				AF50B1432691E86400377EF3 /* ActivityIndicator.swift in Sources */,
+				AF9C868A2688B287009CFF47 /* RequireOpen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +429,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1BA72C2687809200A4AC29 /* ContentView.swift in Sources */,
+				AF1BA74A2687814100A4AC29 /* HeartDisplayView.swift in Sources */,
+				AF8F90332689B74E002FAF83 /* model.swift in Sources */,
+				AFE31CA42690E21E005A5CF2 /* Pulsating.swift in Sources */,
+				AF1BA74C2687814100A4AC29 /* ContentView.swift in Sources */,
 				AF1BA72E2687809200A4AC29 /* HeartRateDisplayApp.swift in Sources */,
-				AF1BA7302687809200A4AC29 /* ComplicationController.swift in Sources */,
+				AFE31CA22690D132005A5CF2 /* ActivityIndicator.swift in Sources */,
+				AF50B13F2691E7FF00377EF3 /* getElapsedInterval.swift in Sources */,
+				AF1BA74B2687814100A4AC29 /* HeartRateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,11 +455,23 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		AF162387269508FF00875833 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF162386269508FF00875833 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		AF1BA7372687809300A4AC29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -385,6 +522,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = HeartRateDisplay;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -394,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -437,6 +576,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = HeartRateDisplay;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -446,7 +586,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartRateDisplay WatchKit Extension/HeartRateDisplay WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"HeartRateDisplay WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				ENABLE_PREVIEWS = YES;
@@ -456,8 +598,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +613,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartRateDisplay WatchKit Extension/HeartRateDisplay WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"HeartRateDisplay WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				ENABLE_PREVIEWS = YES;
@@ -480,8 +625,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -498,9 +644,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				IBSC_MODULE = HeartRateDisplay_WatchKit_Extension;
 				INFOPLIST_FILE = "HeartRateDisplay WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -518,9 +666,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				IBSC_MODULE = HeartRateDisplay_WatchKit_Extension;
 				INFOPLIST_FILE = "HeartRateDisplay WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -537,7 +687,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeartRateDisplay/HeartRateDisplay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"HeartRateDisplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				ENABLE_PREVIEWS = YES;
@@ -547,11 +699,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -560,7 +713,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeartRateDisplay/HeartRateDisplay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"HeartRateDisplay/Preview Content\"";
 				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
 				ENABLE_PREVIEWS = YES;
@@ -570,11 +725,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRateDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -619,6 +775,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF1BA754268781E300A4AC29 /* XCRemoteSwiftPackageReference "Communicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/Communicator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF1BA755268781E300A4AC29 /* Communicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF1BA754268781E300A4AC29 /* XCRemoteSwiftPackageReference "Communicator" */;
+			productName = Communicator;
+		};
+		AF1BA7572687820200A4AC29 /* Communicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF1BA754268781E300A4AC29 /* XCRemoteSwiftPackageReference "Communicator" */;
+			productName = Communicator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF1BA7032687809000A4AC29 /* Project object */;
 }

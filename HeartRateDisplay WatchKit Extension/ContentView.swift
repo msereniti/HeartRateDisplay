@@ -1,21 +1,21 @@
 //
 //  ContentView.swift
-//  HeartRateDisplay WatchKit Extension
+//  heart-rate-display WatchKit Extension
 //
-//  Created by Mikhail Kryuchkov on 6/26/21.
+//  Created by Mikhail Kryuchkov on 6/11/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        HeartRateController()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("Apple Watch SE - 40mm")
     }
 }
