@@ -11,7 +11,6 @@ import HealthKit
 import Communicator
 
 let maxIdleToSupposeDeniedPermissions = 15.0 // seconds
-let maxIdleToSupposePhoneOffline = 40.0 // seconds
 
 struct HeartRateController: View {
     private var healthStore = HKHealthStore()
@@ -19,7 +18,6 @@ struct HeartRateController: View {
     
     @State var session = WKExtendedRuntimeSession()
     @State var sessionEstimatedEnd = Date(timeIntervalSince1970: 0)
-    @State var lastPhoneOnlineConfirmation = Date(timeIntervalSince1970: 0)
     
     @Environment(\.scenePhase) var scenePhase
     
@@ -41,7 +39,6 @@ struct HeartRateController: View {
         HeartDisplayView(heartRate: heartRate, heartRateMeasured: heartRateMeasured, measured: measured)
             .onAppear(perform: {
                 autorizeHealthKit()
-                listenToSessionToggle()
             })
             .alert(isPresented: $showingErrorAlert) {
                 if (errorMessageKey != "") {
@@ -71,9 +68,7 @@ struct HeartRateController: View {
                         message: "alert.permission.body \(Int(maxIdleToSupposeDeniedPermissions))" as LocalizedStringKey
                     )
                 }
-                if (time.timeIntervalSince1970 - lastPhoneOnlineConfirmation.timeIntervalSince1970 > maxIdleToSupposePhoneOffline && session.state == .running) {
-                    session.invalidate()
-                }
+                startSession()
             }.onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationWillEnterForegroundNotification), perform: { _ in
                 startSession()
             })
@@ -187,20 +182,6 @@ struct HeartRateController: View {
         }
     }
     
-    
-    func listenToSessionToggle() {
-        ImmediateMessage.observe { message in
-            if (message.identifier == "start-session") {
-                startSession()
-            }
-            if (message.identifier == "stop-session") {
-                session.invalidate()
-            }
-            if (message.identifier == "confirm-online") {
-                lastPhoneOnlineConfirmation = Date()
-            }
-        }
-    }
     
     func startSession() {
         if (session.state == .running && sessionEstimatedEnd.timeIntervalSince1970 - Date().timeIntervalSince1970 >= 20 * 60) {

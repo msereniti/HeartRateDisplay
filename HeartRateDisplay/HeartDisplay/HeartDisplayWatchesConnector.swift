@@ -21,7 +21,6 @@ struct HeartDisplayWatchesConnector: View {
     @State private var connectionState = ConnectionState.unknown
     
     @Environment(\.scenePhase) var scenePhase
-    private let checkScenePhaseTimer = Timer.publish(every: 30, on: .current, in: .common).autoconnect()
     private let checkWatchesOnlineTimer = Timer.publish(every: 10, on: .current, in: .common).autoconnect()
     
     @State private var watchesBackgroundSessionEnds =  Date(timeIntervalSinceNow: 60 * 60)
@@ -62,11 +61,7 @@ struct HeartDisplayWatchesConnector: View {
             listenToStateUpdates()
             listenToWatchMessages()
             checkReachability()
-        }).onReceive(checkScenePhaseTimer) { _ in
-            if (scenePhase == .active) {
-                pingWatches()
-            }
-        }.onReceive(checkWatchesOnlineTimer) { _ in
+        }).onReceive(checkWatchesOnlineTimer) { _ in
             checkReachability()
         }
     }
@@ -105,7 +100,6 @@ struct HeartDisplayWatchesConnector: View {
                     case .immediatelyReachable:
                         if (connectionState != .ok) {
                             connectionState = .measuring
-                            startSession()
                         }
                     case .backgroundOnly:
                         if (
@@ -122,10 +116,6 @@ struct HeartDisplayWatchesConnector: View {
     func listenToWatchMessages() {
         ImmediateMessage.observe { message in
             if (message.identifier == "heart-rate") {
-                if (connectionState == .measuring) {
-                    startSession()
-                }
-                
                 heartRate = message.content["heartRate"] as! Int
                 heartRateMeasured = message.content["heartRateMeasured"] as! Date
                 connectionState = .ok
@@ -134,22 +124,6 @@ struct HeartDisplayWatchesConnector: View {
                 watchesBackgroundSessionEnds = Date(timeIntervalSinceNow: 60 * 60)
             }
         }
-    }
-    
-    func startSession() {
-        pingWatches()
-        let message = ImmediateMessage(identifier: "start-session", content: [:])
-        Communicator.shared.send(message)
-    }
-    
-    func stopSession() {
-        let message = ImmediateMessage(identifier: "stop-session", content: [:])
-        Communicator.shared.send(message)
-    }
-    
-    func pingWatches() {
-        let message = ImmediateMessage(identifier: "confirm-online", content: [:])
-        Communicator.shared.send(message)
     }
 }
 
